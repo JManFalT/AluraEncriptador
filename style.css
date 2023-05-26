@@ -1,0 +1,279 @@
+#botonCopiar{
+    display: none;
+}
+
+html{
+    height: auto;
+    width: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #0A192C;
+}
+
+
+.logo{
+    margin-left: 95px;
+    width: 60px;
+    height: 60px;
+    padding-top: 6px;
+}
+
+main{
+    width: auto;
+    height: 700px;
+    background-color: #ebebeb;
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+section{
+    height: 100%;
+    background-color: #ebebeb;
+    margin-bottom: 100px;
+}
+
+.section01{
+    width: 60%;
+}
+
+.footer{
+    background-color: #0A192C;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+i{
+    color: #DDA854;
+}
+
+.container{
+    padding: 5px;
+}
+
+.textarea{
+    width: 90%;
+    height: 60%;
+    resize: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.terminos{
+    margin-top: 25px;
+    margin-left: 150px;
+    padding: 0px;
+}
+
+.contenedorbotons{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botnencriptar{
+    width: 30%;
+    height: 40px;
+    background-color: #0A192C;
+    color: aliceblue;
+    border-radius: 5px;
+
+    border: 0;
+    outline: 0;
+}
+
+.botnencriptar:hover{
+    background-color: #DDA854;
+    color: #0A192C;
+}
+
+.botndesencriptar{
+    width: 30%;
+    height: 40px;
+    background-color: #0A192C;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.botndesencriptar:hover{
+    background-color: #DDA854;
+    color: #0A192C;
+}
+
+.textodesencriptado{
+    justify-content: center;
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    left: 60%;
+    margin-top: 15px;
+    background: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.textdesencriptado h2{
+    width: 60%;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.textdesencriptado p{
+    width: 80%;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.textdesencriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+.botncopiar{
+    width: 30%;
+    height: 40px;
+    background-color: #DDA854;
+    color: #0A192C;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.botncopiar:hover{
+    background-color: #0A192C;
+    color: #fff;
+}
+
+.imagen{
+    width: 100%;
+    height: 60%;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.subtitulo{
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+}
+
+.parrafo{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+@media (max-width: 57.5em) {
+    .main{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .section01 {
+      width: 100%;
+
+    }
+    
+    .terminos {
+      width: 80%;
+      left: 10%;
+      top: 67%;
+    }
+
+    .terminos p {
+      font-size: 16px;
+    }
+    
+    .contenedorbotons {
+      width: 80%;
+      left: 10%;
+      margin: auto;
+      top: 70%;
+    }
+
+    .botnencriptar,
+    .botndesencriptar {
+      width: 48%;
+      border-radius: 16px;
+    }
+    
+    .botnencriptar:hover,
+    .botndesencriptar:hover {
+      margin: 0.3%;
+      width: 47.5%;
+      padding: 1.8%;
+    }
+    .textodesencriptado {
+        width: 80%;
+        height: auto;
+        left: 10%;
+        margin-top: 590px;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .textodesencriptado .imagen {
+        padding-top: 20px;
+      }
+    
+      .textdesencriptado h2 {
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    
+      .textdesencriptado p {
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    
+      .textdesencriptado img {
+        width: 60%;
+        height: auto;
+        top: auto;
+        padding-top: 0;
+        margin-bottom: 20px;
+        display: block;
+        visibility: visible;
+      }
+    
+      .botncopiar {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/338f0f8cab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/script.js"></script>
+    <link rel="shortcut icon" type="icon" href="img/logo.png"/></head>
+    <title>RetoAlura</title>
+</head>
+<body>
+
+<header>
+  <img src="img/logoa.png" alt="LogoAluraLatam" class="logo">
+</header>
+
+<main>
+  <section class=" section01 col-12 col-sm-12 col-md-6 col-lg-6">
+    <input type="text" id="textencriptado" class="textarea"  placeholder="Escribe tu texto aquí">
+    <div class="terminos col-12 col-sm-12 col-md-6 col-lg-6">
+      <p><i class="fa-sharp fa-solid fa-circle-info"></i> Solo letras minúsculas y sin acentos.</p>
+    </div>
+    <div class="contenedorbotons">
+      <button id="botonEncriptado" class="botnencriptar">Encriptar</button>
+      <button id="botonDesencriptado" class="botndesencriptar">Desencriptar</button>
+    </div>
+  </section>
+
+  <div class="textodesencriptado">
+    <div class="imagen">
+      <img src="/img/mfalcon.png" alt="">
+    </div>
+    <div id="textdesencriptado" class="parrafo">
+      <h2>No se encontro ningún mensaje</h2>
+      <p>Escribe el texto que desea encriptar o desencriptar</p>
+    </div>
+    <button id="botonCopiar" class="botncopiar">Copiar</button>
+  </div>
+</main>
+    
+
+<footer class="footer">
+  <div class="container">
+          
+    <div class="row  text-center">
+      <div class="col-md-4">
+        <i class="fas fa-map-marker-alt mt-2"></i>
+        <p class="text-light">Nuevo León, México</p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://mfalcon.net/" target=»_blank»><li class="list-inline-item"><i class="fa-solid fa-globe  mt-2"></i></li></a>
+        <p class="text-light">Portafolio</p>
+      </div>
+      <div class="col-md-4">
+        <i class="far fa-envelope  mt-2"></i>
+        <p class="text-light"> info@mfalcon.net</p>
+      </div>
+    </div>
+    
+    <div class="row text-center">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-white">
+        <p class="h6 text-light">&copy Design by Manuel Falcon</p>
+      </div>
+    </div>
+        
+  </div>
+</footer>
+      
+
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+</html>
